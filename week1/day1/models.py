@@ -21,3 +21,9 @@ class Holiday(BaseModel):
     date: date
     name: str
     countryCode: str
+
+class ExchangeRate(BaseModel):
+    amount: float
+    base: str
+    date: date
+    rates: dict[str, float]
