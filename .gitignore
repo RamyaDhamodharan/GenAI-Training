@@ -2,3 +2,4 @@ refer.txt
 .venv
 __pycache__
 *.py[codz]
+.env
