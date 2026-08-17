@@ -1,0 +1,31 @@
+
+What is Python?
+What is artificial intelligence?
+What is machine learning?
+What is deep learning?
+What is an API?
+What is REST?
+What is JSON?
+What is HTTP?
+What is FastAPI?
+What is SQL?
+What is PostgreSQL?
+What is a database?
+What is an ORM?
+What is SQLAlchemy?
+What is an LLM?
+What is tokenization?
+What is a context window?
+What is temperature in an LLM?
+What is an embedding?
+What is RAG?
+What is the capital of France?
+What is the largest planet in our solar system?
+How many days are there in a week?
+What is the difference between a laptop and a desktop?
+Why do we need water?
+What is artificial intelligence?
+How many continents are there in the world?
+What is the opposite of the word "happy"?
+How do you make a cup of tea?
+Why is exercise important?
