@@ -1,0 +1,4 @@
+openai/gpt-oss-120b
+meta-llama/llama-3.3-70b-instruct
+deepseek/deepseek-v4-flash
+nvidia/nemotron-3.5-lightning:free

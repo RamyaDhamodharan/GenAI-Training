@@ -1,0 +1,177 @@
+
+======================================================================
+MODEL: llama3.2:3b
+PROMPT: P1
+======================================================================
+
+Prompt:
+Explain what an API is to a beginner using one simple real-world example. Keep the answer under 150 words.
+
+Latency:
+16.516 seconds
+
+Response:
+Imagine you want to order food from a restaurant, but you can't go to the restaurant to place your order. That's where an API (Application Programming Interface) comes in.
+
+Think of an API like a messenger between you and the restaurant. You send a message (like "I want to order a pizza") to the messenger (the API), and the messenger takes your message to the restaurant (who then prepares your pizza).
+
+The API doesn't actually do anything with your order; it just helps you communicate with the restaurant. When the restaurant is ready, it sends the pizza back to the messenger, who then gives it to you.
+
+In this way, the API acts as an intermediary, allowing different systems (like your phone and the restaurant's kitchen) to communicate with each other.
+
+Usable: PENDING
+
+======================================================================
+MODEL: llama3.2:3b
+PROMPT: P2
+======================================================================
+
+Prompt:
+Extract the name, email, phone number, and issue from this text: Hi, I'm Arun. You can reach me at arun@example.com or +91 9876543210. My issue is that I cannot log in to my account.
+
+Latency:
+7.270 seconds
+
+Response:
+Here are the extracted information:
+
+* Name: Arun
+* Email: arun@example.com
+* Phone Number: +91 9876543210
+* Issue: Cannot log in to account
+
+Usable: PENDING
+
+======================================================================
+MODEL: llama3.2:3b
+PROMPT: P3
+======================================================================
+
+Prompt:
+Convert this information into JSON with the fields name, age, city, profession: Priya is 24 years old, lives in Chennai, and works as a software engineer.
+
+Latency:
+18.798 seconds
+
+Response:
+Here's the information in JSON format:
+
+```
+{
+    "name": "Priya",
+    "age": 24,
+    "city": "Chennai",
+    "profession": "Software Engineer"
+}
+```
+
+Or in a more human-readable format:
+
+```
+{
+    "person": {
+        "name": "Priya",
+        "age": 24,
+        "city": "Chennai",
+        "profession": "Software Engineer"
+    }
+}
+```
+
+Or in a nested format:
+
+```
+{
+    "person": {
+        "name": "Priya",
+        "age": 24,
+        "address": {
+            "city": "Chennai"
+        },
+        "job": {
+            "profession": "Software Engineer"
+        }
+    }
+}
+```
+
+Note: The JSON format can vary based on the needs and preferences of the user.
+
+Usable: PENDING
+
+======================================================================
+MODEL: llama3.2:3b
+PROMPT: P4
+======================================================================
+
+Prompt:
+A shop gives a 20% discount on a product priced at ₹2,500. After the discount, 18% GST is added. What is the final price? Show the calculation.
+
+Latency:
+15.935 seconds
+
+Response:
+To find the final price, we need to calculate the discount first, then add the GST.
+
+1. Calculate the discount:
+Discount = 20% of ₹2,500
+= 0.20 x ₹2,500
+= ₹500
+
+2. Calculate the price after discount:
+Price after discount = Original price - Discount
+= ₹2,500 - ₹500
+= ₹2,000
+
+3. Calculate the GST:
+GST = 18% of ₹2,000
+= 0.18 x ₹2,000
+= ₹360
+
+4. Calculate the final price:
+Final price = Price after discount + GST
+= ₹2,000 + ₹360
+= ₹2,360
+
+The final price is ₹2,360.
+
+Usable: PENDING
+
+======================================================================
+MODEL: llama3.2:3b
+PROMPT: P5
+======================================================================
+
+Prompt:
+Write a Python function that takes a list of integers and returns the second-largest unique number. Handle the case where fewer than two unique numbers are provided.
+
+Latency:
+16.091 seconds
+
+Response:
+def second_largest_unique_numbers(numbers):
+    """
+    Returns the second-largest unique number in a list of integers.
+
+    If fewer than two unique numbers are provided, returns None.
+
+    Args:
+        numbers (list): A list of integers.
+
+    Returns:
+        int or None: The second-largest unique number, or None if fewer than two unique numbers are provided.
+    """
+    # Create a set to store unique numbers
+    unique_numbers = set(numbers)
+
+    # If fewer than two unique numbers are provided, return None
+    if len(unique_numbers) < 2:
+        return None
+
+    # Sort the unique numbers in descending order
+    sorted_unique_numbers = sorted(unique_numbers, reverse=True)
+
+    # Return the second-largest unique number
+    return sorted_unique_numbers[1]
+
+Usable: PENDING
