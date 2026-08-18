@@ -22,7 +22,7 @@ What is RAG?
 What is the capital of France?
 What is the largest planet in our solar system?
 How many days are there in a week?
-What is the difference between a laptop and a desktop?
+What is the difference between a laptop and a desktop
 Why do we need water?
 What is artificial intelligence?
 How many continents are there in the world?

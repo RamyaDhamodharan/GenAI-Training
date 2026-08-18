@@ -1,0 +1,953 @@
+======================================================================
+MODEL BAKE-OFF RESULTS
+======================================================================
+
+Total prompts: 5
+Total models: 4
+Total API calls: 20
+
+======================================================================
+MODEL: openai/gpt-oss-120b
+PROMPT: P1
+======================================================================
+
+Prompt:
+Explain what an API is to a beginner using one simple real-world example. Keep the answer under 150 words.
+
+Latency:
+7.554 seconds
+
+Usage:
+Prompt tokens: 90
+Completion tokens: 251
+Total tokens: 341
+Cost: $9.9345e-05
+
+Response:
+**What is an API?**  
+Think of an **API (Application Programming Interface)** as a waiter in a restaurant.
+
+- **You (the customer)** want a dish, but you don’t go into the kitchen to cook it.  
+- **The menu** lists what the kitchen can make and how you ask for it.  
+- **The waiter** takes your order, tells the kitchen exactly what you want, and then brings the finished dish back to you.
+
+In software, the **app** (you) talks to another **service** (the kitchen) through an **API** (the waiter). The API defines the “menu” of requests you can make and the format of the responses you’ll get, so you don’t need to know how the service works inside.
+
+*Example:* When a weather app shows today’s forecast, it calls a weather‑service API, asking “What’s the temperature at ZIP 12345?” The API returns the data, and the app displays it. No need to know how the weather service gathers its data—just how to ask for it.
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: openai/gpt-oss-120b
+PROMPT: P2
+======================================================================
+
+Prompt:
+Extract the name, email, phone number, and issue from this text: Hi, I'm Arun. You can reach me at arun@example.com or +91 9876543210. My issue is that I cannot log in to my account.
+
+Latency:
+3.504 seconds
+
+Usage:
+Prompt tokens: 104
+Completion tokens: 125
+Total tokens: 229
+Cost: $2.5098e-05
+
+Response:
+**Extracted Information**
+
+- **Name:** Arun  
+- **Email:** arun@example.com  
+- **Phone Number:** +91 9876543210  
+- **Issue:** Cannot log in to my account.
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: openai/gpt-oss-120b
+PROMPT: P3
+======================================================================
+
+Prompt:
+Convert this information into JSON with the fields name, age, city, profession: Priya is 24 years old, lives in Chennai, and works as a software engineer.
+
+Latency:
+4.177 seconds
+
+Usage:
+Prompt tokens: 102
+Completion tokens: 69
+Total tokens: 171
+Cost: $1.479e-05
+
+Response:
+```json
+{
+  "name": "Priya",
+  "age": 24,
+  "city": "Chennai",
+  "profession": "software engineer"
+}
+```
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: openai/gpt-oss-120b
+PROMPT: P4
+======================================================================
+
+Prompt:
+A shop gives a 20% discount on a product priced at ₹2,500. After the discount, 18% GST is added. What is the final price? Show the calculation.
+
+Latency:
+10.122 seconds
+
+Usage:
+Prompt tokens: 106
+Completion tokens: 485
+Total tokens: 591
+Cost: $8.563e-05
+
+Response:
+**Step‑by‑step calculation**
+
+| Step | Description | Calculation | Result |
+|------|-------------|-------------|--------|
+| 1 | **Original price** | – | ₹ 2,500 |
+| 2 | **Discount (20 % of ₹2,500)** | 20 % × 2,500 = 0.20 × 2,500 | ₹ 500 |
+| 3 | **Price after discount** | 2,500 – 500 | ₹ 2,000 |
+| 4 | **GST (18 % of discounted price)** | 18 % × 2,000 = 0.18 × 2,000 | ₹ 360 |
+| 5 | **Final price (discounted price + GST)** | 2,000 + 360 | **₹ 2,360** |
+
+---
+
+### Quick formula
+
+\[
+\text{Final price}= (P \times (1 - d)) \times (1 + g)
+\]
+
+where  
+
+- \(P = 2,500\) ₹ (original price)  
+- \(d = 20\% = 0.20\) (discount)  
+- \(g = 18\% = 0.18\) (GST)
+
+\[
+\begin{aligned}
+\text{Final price} &= 2,500 \times (1-0.20) \times (1+0.18)\\
+&= 2,500 \times 0.80 \times 1.18\\
+&= 2,000 \times 1.18\\
+&= 2,360\;\text{₹}
+\end{aligned}
+\]
+
+**Final price = ₹ 2,360**.
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: openai/gpt-oss-120b
+PROMPT: P5
+======================================================================
+
+Prompt:
+Write a Python function that takes a list of integers and returns the second-largest unique number. Handle the case where fewer than two unique numbers are provided.
+
+Latency:
+97.870 seconds
+
+Usage:
+Prompt tokens: 97
+Completion tokens: 1667
+Total tokens: 1764
+Cost: $0.0002863
+
+Response:
+Below is a **self‑contained, well‑documented** implementation that satisfies the request:
+
+* Takes a list of integers.
+* Returns the **second‑largest *unique* number** (`int`).
+* If the input does not contain at least two distinct values, a clear `ValueError` is raised (you can easily change this to return `None` or a default value if you prefer).
+
+Two versions are provided:
+
+1. **Straight‑forward version** – builds a `set`, sorts it, and picks the second‑last element.  
+   *Time*: `O(n log n)` because of the sort.  
+   *Space*: `O(n)` for the intermediate set.
+
+2. **Linear‑time version** – scans the list once, keeping track of the largest and second‑largest distinct values.  
+   *Time*: `O(n)`; *Space*: `O(1)` (besides the input list).
+
+Both functions share the same public signature and behaviour, so you can pick whichever you like.
+
+---
+
+```python
+from typing import List, Optional
+
+
+class NotEnoughUniqueNumbersError(ValueError):
+    """Raised when < 2 distinct numbers are present in the input."""
+    pass
+
+
+def second_largest_unique_sort(nums: List[int]) -> int:
+    """
+    Return the second‑largest *unique* integer using sorting.
+
+    Parameters
+    ----------
+    nums : List[int]
+        Input list of integers (may contain duplicates).
+
+    Returns
+    -------
+    int
+        The second‑largest distinct value.
+
+    Raises
+    ------
+    NotEnoughUniqueNumbersError
+        If the list contains fewer than two distinct numbers.
+    """
+    # 1️⃣ Build the set of distinct numbers.
+    unique = set(nums)
+    # 2️⃣ We need at least two of them.
+    if len(unique) < 2:
+        raise NotEnoughUniqueNumbersError(
+            "At least two distinct numbers are required."
+        )
+    # 3️⃣ Sort descending and pick the second element.
+    #    `sorted` returns a list, so we can index it.
+    sorted_desc = sorted(unique, reverse=True)
+    return sorted_desc[1]
+
+
+def second_largest_unique_linear(nums: List[int]) -> int:
+    """
+    Return the second‑largest *unique* integer in O(n) time and O(1) extra space.
+
+    The algorithm keeps two variables, ``first`` (largest) and ``second`` (second‑largest),
+    updating them while scanning the list once. Duplicate values are ignored.
+
+    Parameters
+    ----------
+    nums : List[int]
+        Input list of integers (may contain duplicates).
+
+    Returns
+    -------
+    int
+        The second‑largest distinct value.
+
+    Raises
+    ------
+    NotEnoughUniqueNumbersError
+        If the list contains fewer than two distinct numbers.
+    """
+    first: Optional[int] = None   # Largest seen so far
+    second: Optional[int] = None  # Second‑largest seen so far
+
+    for x in nums:
+        # Skip if x has already been accounted for as first or second
+        if x == first or x == second:
+            continue
+
+        if first is None or x > first:
+            # New maximum found; demote the old maximum to second place
+            second = first
+            first = x
+        elif second is None or x > second:
+            # x is between first and second
+            second = x
+        # else: x is smaller than both first and second → ignore
+
+    if second is None:
+        # This means we never found a distinct value smaller than the maximum.
+        raise NotEnoughUniqueNumbersError(
+            "At least two distinct numbers are required."
+        )
+    return second
+
+
+# ----------------------------------------------------------------------
+# Small demo / unit‑test style usage
+# ----------------------------------------------------------------------
+if __name__ == "__main__":
+    test_cases = [
+        ([5, 1, 5, 3, 2], 3),          # normal case
+        ([7, 7, 7, 7], None),         # all identical → error
+        ([], None),                    # empty list → error
+        ([2, 2, 1], 1),                # only two distinct numbers
+        ([-1, -3, -2, -4], -2),        # negative numbers
+        ([10, 9, 8, 7, 6], 9),         # already sorted descending
+        ([1, 2, 3, 4, 5], 4),          # already sorted ascending
+    ]
+
+    for nums, expected in test_cases:
+        try:
+            result_sort = second_largest_unique_sort(nums)
+            result_linear = second_largest_unique_linear(nums)
+            assert result_sort == result_linear, "Both implementations disagree"
+            print(f"Input {nums!r} → second‑largest = {result_sort}")
+            assert expected is None or result_sort == expected
+        except NotEnoughUniqueNumbersError as e:
+            print(f"Input {nums!r} → error: {e}")
+            assert expected is None
+```
+
+### How the linear algorithm works (step‑by‑step)
+
+| Step | `x` | `first` before | `second` before | Action | `first` after | `second` after |
+|------|-----|----------------|----------------|--------|---------------|----------------|
+| 1    | 5   | `None`         | `None`         | `x > first` → update | 5 | `None` |
+| 2    | 1   | 5              | `None`         | `x > second` → update | 5 | 1 |
+| 3    | 5   | 5              | 1              | Duplicate of `first` → skip | 5 | 1 |
+| 4    | 3   | 5              | 1              | `x > second` → update | 5 | 3 |
+| 5    | 2   | 5              | 3              | `x` is smaller → ignore | 5 | 3 |
+| **Result** | – | – | – | – | **5** | **3** |
+
+Thus the function returns `3`, the second‑largest *unique* number.
+
+---
+
+#### Customising the “not enough numbers” behaviour
+
+If you prefer the function to **return `None`** (or some sentinel value) instead of raising, just wrap the call:
+
+```python
+def second_largest_unique(nums: List[int]) -> Optional[int]:
+    try:
+        return second_largest_unique_linear(nums)   # or …_sort
+    except NotEnoughUniqueNumbersError:
+        return None
+```
+
+You can also expose a parameter like `default: Any = None` and return that value when the exception would occur.
+
+---
+
+#### Complexity recap
+
+| Implementation | Time | Extra Space |
+|----------------|------|-------------|
+| `*_sort`       | `O(n log n)` (set + sort) | `O(n)` (the set) |
+| `*_linear`     | `O(n)` (single pass) | `O(1)` (just two vars) |
+
+Pick the one that best matches the size of the data you expect and your performance constraints.
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: meta-llama/llama-3.3-70b-instruct
+PROMPT: P1
+======================================================================
+
+Prompt:
+Explain what an API is to a beginner using one simple real-world example. Keep the answer under 150 words.
+
+Latency:
+5.432 seconds
+
+Usage:
+Prompt tokens: 59
+Completion tokens: 143
+Total tokens: 202
+Cost: $6.487e-05
+
+Response:
+Imagine you're at a restaurant and you want to order food. You can't just walk into the kitchen and make your own food because that's not how it works. Instead, you give your order to the waiter, who takes it to the kitchen staff. They then prepare your food according to your order and give it back to the waiter, who brings it to you.
+
+In this example, the waiter is like an API (Application Programming Interface). You (the customer) are like a computer program, and the kitchen (the restaurant's system) is like another computer system. The API (waiter) helps you communicate with the other system (kitchen) to get what you need (your food).
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: meta-llama/llama-3.3-70b-instruct
+PROMPT: P2
+======================================================================
+
+Prompt:
+Extract the name, email, phone number, and issue from this text: Hi, I'm Arun. You can reach me at arun@example.com or +91 9876543210. My issue is that I cannot log in to my account.
+
+Latency:
+2.129 seconds
+
+Usage:
+Prompt tokens: 62
+Completion tokens: 45
+Total tokens: 107
+Cost: $2.06e-05
+
+Response:
+Here are the extracted details:
+
+* **Name:** Arun
+* **Email:** arun@example.com
+* **Phone Number:** +91 9876543210
+* **Issue:** Cannot log in to account
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: meta-llama/llama-3.3-70b-instruct
+PROMPT: P3
+======================================================================
+
+Prompt:
+Convert this information into JSON with the fields name, age, city, profession: Priya is 24 years old, lives in Chennai, and works as a software engineer.
+
+Latency:
+2.710 seconds
+
+Usage:
+Prompt tokens: 45
+Completion tokens: 63
+Total tokens: 108
+Cost: $2.466e-05
+
+Response:
+Here is the JSON representation of the provided information:
+
+```json
+{
+  "name": "Priya",
+  "age": 24,
+  "city": "Chennai",
+  "profession": "software engineer"
+}
+```
+
+Let me know if you'd like me to help with anything else!
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: meta-llama/llama-3.3-70b-instruct
+PROMPT: P4
+======================================================================
+
+Prompt:
+A shop gives a 20% discount on a product priced at ₹2,500. After the discount, 18% GST is added. What is the final price? Show the calculation.
+
+Latency:
+6.920 seconds
+
+Usage:
+Prompt tokens: 74
+Completion tokens: 186
+Total tokens: 260
+Cost: $8.402e-05
+
+Response:
+To calculate the final price, we need to follow these steps:
+
+1. Calculate the discount amount:
+Discount percentage = 20%
+Original price = ₹2,500
+Discount amount = 20% of ₹2,500 = (20/100) × 2500 = ₹500
+
+2. Calculate the price after discount:
+Price after discount = Original price - Discount amount
+= ₹2,500 - ₹500
+= ₹2,000
+
+3. Calculate the GST amount:
+GST percentage = 18%
+Price after discount = ₹2,000
+GST amount = 18% of ₹2,000 = (18/100) × 2000 = ₹360
+
+4. Calculate the final price:
+Final price = Price after discount + GST amount
+= ₹2,000 + ₹360
+= ₹2,360
+
+So, the final price of the product is ₹2,360.
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: meta-llama/llama-3.3-70b-instruct
+PROMPT: P5
+======================================================================
+
+Prompt:
+Write a Python function that takes a list of integers and returns the second-largest unique number. Handle the case where fewer than two unique numbers are provided.
+
+Latency:
+9.075 seconds
+
+Usage:
+Prompt tokens: 41
+Completion tokens: 393
+Total tokens: 434
+Cost: $0.000162735
+
+Response:
+**Second-Largest Unique Number Function**
+======================================
+
+Here's a Python function that takes a list of integers and returns the second-largest unique number. If fewer than two unique numbers are provided, it raises a `ValueError`.
+
+```python
+def second_largest_unique(numbers):
+    """
+    Returns the second-largest unique number in a list of integers.
+
+    Args:
+        numbers (list): A list of integers.
+
+    Returns:
+        int: The second-largest unique number.
+
+    Raises:
+        ValueError: If fewer than two unique numbers are provided.
+    """
+    # Remove duplicates and sort the list in descending order
+    unique_numbers = sorted(set(numbers), reverse=True)
+
+    # Check if there are at least two unique numbers
+    if len(unique_numbers) < 2:
+        raise ValueError("Fewer than two unique numbers provided")
+
+    # Return the second-largest unique number
+    return unique_numbers[1]
+
+# Example usage
+numbers = [4, 2, 9, 6, 5, 1, 8, 3, 7]
+print(second_largest_unique(numbers))  # Output: 8
+
+# Error handling
+try:
+    numbers = [1, 1, 1, 1]
+    print(second_largest_unique(numbers))
+except ValueError as e:
+    print(e)  # Output: Fewer than two unique numbers provided
+```
+
+**How it works:**
+
+1. The function takes a list of integers as input and removes duplicates using a `set`.
+2. It sorts the unique numbers in descending order using the `sorted` function with the `reverse=True` argument.
+3. It checks if there are at least two unique numbers. If not, it raises a `ValueError`.
+4. If there are at least two unique numbers, it returns the second-largest unique number, which is the second element in the sorted list (`unique_numbers[1]`).
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: deepseek/deepseek-v4-flash
+PROMPT: P1
+======================================================================
+
+Prompt:
+Explain what an API is to a beginner using one simple real-world example. Keep the answer under 150 words.
+
+Latency:
+2.658 seconds
+
+Usage:
+Prompt tokens: 27
+Completion tokens: 200
+Total tokens: 227
+Cost: $5.7218e-05
+
+Response:
+An API (Application Programming Interface) is like a waiter in a restaurant. You (the app) want food (data or a service) from the kitchen (the server). Instead of barging into the kitchen, you tell the waiter your order (request). The waiter takes it to the kitchen, brings back your meal (response), and you never need to know how the kitchen works.
+
+For example, when a weather app shows today’s forecast, it asks the weather service’s API for data. The API fetches the info and hands it to the app—simple, secure, and standardized.
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: deepseek/deepseek-v4-flash
+PROMPT: P2
+======================================================================
+
+Prompt:
+Extract the name, email, phone number, and issue from this text: Hi, I'm Arun. You can reach me at arun@example.com or +91 9876543210. My issue is that I cannot log in to my account.
+
+Latency:
+2.336 seconds
+
+Usage:
+Prompt tokens: 63
+Completion tokens: 152
+Total tokens: 215
+Cost: $5.138e-05
+
+Response:
+{
+  "name": "Arun",
+  "email": "arun@example.com",
+  "phone": "+91 9876543210",
+  "issue": "I cannot log in to my account."
+}
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: deepseek/deepseek-v4-flash
+PROMPT: P3
+======================================================================
+
+Prompt:
+Convert this information into JSON with the fields name, age, city, profession: Priya is 24 years old, lives in Chennai, and works as a software engineer.
+
+Latency:
+7.805 seconds
+
+Usage:
+Prompt tokens: 39
+Completion tokens: 110
+Total tokens: 149
+Cost: $2.13934e-05
+
+Response:
+```json
+{
+  "name": "Priya",
+  "age": 24,
+  "city": "Chennai",
+  "profession": "software engineer"
+}
+```
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: deepseek/deepseek-v4-flash
+PROMPT: P4
+======================================================================
+
+Prompt:
+A shop gives a 20% discount on a product priced at ₹2,500. After the discount, 18% GST is added. What is the final price? Show the calculation.
+
+Latency:
+1.399 seconds
+
+Usage:
+Prompt tokens: 43
+Completion tokens: 109
+Total tokens: 152
+Cost: $2.349e-05
+
+Response:
+First, calculate the discount:
+
+Discount = 20% of ₹2,500  
+= (20/100) × 2,500 = ₹500  
+
+Price after discount = ₹2,500 − ₹500 = ₹2,000  
+
+Then add 18% GST:
+
+GST = 18% of ₹2,000  
+= (18/100) × 2,000 = ₹360  
+
+Final price = ₹2,000 + ₹360 = **₹2,360**  
+
+**Answer:** ₹2,360
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: deepseek/deepseek-v4-flash
+PROMPT: P5
+======================================================================
+
+Prompt:
+Write a Python function that takes a list of integers and returns the second-largest unique number. Handle the case where fewer than two unique numbers are provided.
+
+Latency:
+39.688 seconds
+
+Usage:
+Prompt tokens: 34
+Completion tokens: 920
+Total tokens: 954
+Cost: $0.00016866
+
+Response:
+Here's a Python function that finds the second-largest unique number in a list:
+
+```python
+def second_largest_unique(numbers):
+    """
+    Returns the second-largest unique number from a list of integers.
+    
+    Args:
+        numbers (list): A list of integers
+        
+    Returns:
+        int or None: The second-largest unique number, or None if there are 
+                     fewer than two unique numbers
+    """
+    # Remove duplicates by converting to a set, then back to a list
+    unique_numbers = list(set(numbers))
+    
+    # Handle case with fewer than 2 unique numbers
+    if len(unique_numbers) < 2:
+        return None
+    
+    # Sort in descending order and return the second element
+    unique_numbers.sort(reverse=True)
+    return unique_numbers[1]
+
+
+# Alternative implementation without sorting (more efficient for large lists)
+def second_largest_unique_v2(numbers):
+    """
+    Returns the second-largest unique number without sorting the entire list.
+    More efficient for large lists (O(n) time complexity).
+    """
+    # Remove duplicates
+    unique_numbers = set(numbers)
+    
+    # Handle case with fewer than 2 unique numbers
+    if len(unique_numbers) < 2:
+        return None
+    
+    # Find largest and second largest in one pass
+    largest = second_largest = float('-inf')
+    
+    for num in unique_numbers:
+        if num > largest:
+            second_largest = largest
+            largest = num
+        elif num > second_largest:
+            second_largest = num
+    
+    return second_largest
+
+
+# Example usage and test cases
+if __name__ == "__main__":
+    # Test cases
+    test_cases = [
+        [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5],  # Normal case
+        [1, 1, 1, 1],                         # Only one unique number
+        [5, 5, 5],                            # Only one unique number
+        [10, 20, 30, 40, 50],                 # All unique numbers
+        [-5, -2, -10, -8],                    # Negative numbers
+        [100],                                # Single number
+        [],                                   # Empty list
+        [3, 3, 3, 2, 2, 1],                   # Mixed duplicates
+    ]
+    
+    for i, test in enumerate(test_cases, 1):
+        result = second_largest_unique(test)
+        result_v2 = second_largest_unique_v2(test)
+        print(f"Test {i}: {test} -> Second largest: {result} (v2: {result_v2})")
+```
+
+**Output:**
+```
+Test 1: [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5] -> Second largest: 6 (v2: 6)
+Test 2: [1, 1, 1, 1] -> Second largest: None (v2: None)
+Test 3: [5, 5, 5] -> Second largest: None (v2: None)
+Test 4: [10, 20, 30, 40, 50] -> Second largest: 40 (v2: 40)
+Test 5: [-5, -2, -10, -8] -> Second largest: -5 (v2: -5)
+Test 6: [100] -> Second largest: None (v2: None)
+Test 7: [] -> Second largest: None (v2: None)
+Test 8: [3, 3, 3, 2, 2, 1] -> Second largest: 2 (v2: 2)
+```
+
+**Key features of this solution:**
+
+1. **Handles duplicates**: Uses `set()` to get unique numbers before processing
+2. **Edge cases**: Returns `None` when fewer than 2 unique numbers exist
+3. **Two implementations**: 
+   - First version is simpler and uses sorting
+   - Second version is more efficient (O(n) time complexity) for large lists
+4. **Returns None** for invalid cases instead of raising an exception (but you could modify it to raise a `ValueError` if preferred)
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: nvidia/nemotron-3.5-lightning:free
+PROMPT: P1
+======================================================================
+
+Prompt:
+Explain what an API is to a beginner using one simple real-world example. Keep the answer under 150 words.
+
+Latency:
+5.180 seconds
+
+Usage:
+Prompt tokens: 42
+Completion tokens: 812
+Total tokens: 854
+Cost: $0
+
+Response:
+An API (Application Programming Interface) is like a waiter at a restaurant. You (the user) want a meal, but you don’t cook it yourself. The kitchen (the server) prepares the food, but you can’t walk in and shout orders directly. The waiter takes your request, delivers it to the kitchen, and brings back your meal.
+
+In tech, it works the same way: one software program sends a request through an API, the API fetches data or a service from another system, and sends the result back. You don’t need to know how the system works internally—you just use the API’s “menu” of allowed requests to get what you need.
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: nvidia/nemotron-3.5-lightning:free
+PROMPT: P2
+======================================================================
+
+Prompt:
+Extract the name, email, phone number, and issue from this text: Hi, I'm Arun. You can reach me at arun@example.com or +91 9876543210. My issue is that I cannot log in to my account.
+
+Latency:
+3.632 seconds
+
+Usage:
+Prompt tokens: 75
+Completion tokens: 510
+Total tokens: 585
+Cost: $0
+
+Response:
+Here are the extracted details:
+
+- **Name**: Arun  
+- **Email**: arun@example.com  
+- **Phone**: +91 9876543210  
+- **Issue**: I cannot log in to my account
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: nvidia/nemotron-3.5-lightning:free
+PROMPT: P3
+======================================================================
+
+Prompt:
+Convert this information into JSON with the fields name, age, city, profession: Priya is 24 years old, lives in Chennai, and works as a software engineer.
+
+Latency:
+1.608 seconds
+
+Usage:
+Prompt tokens: 52
+Completion tokens: 291
+Total tokens: 343
+Cost: $0
+
+Response:
+```json
+{
+  "name": "Priya",
+  "age": 24,
+  "city": "Chennai",
+  "profession": "software engineer"
+}
+```
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: nvidia/nemotron-3.5-lightning:free
+PROMPT: P4
+======================================================================
+
+Prompt:
+A shop gives a 20% discount on a product priced at ₹2,500. After the discount, 18% GST is added. What is the final price? Show the calculation.
+
+Latency:
+3.410 seconds
+
+Usage:
+Prompt tokens: 59
+Completion tokens: 751
+Total tokens: 810
+Cost: $0
+
+Response:
+Here's the step-by-step calculation:
+
+**1. Original Price:** ₹2,500  
+**2. Calculate 20% Discount:**  
+`20% of ₹2,500 = (20/100) × 2,500 = ₹500`  
+**3. Price After Discount:**  
+`₹2,500 − ₹500 = ₹2,000`  
+**4. Calculate 18% GST on Discounted Price:**  
+`18% of ₹2,000 = (18/100) × 2,000 = ₹360`  
+**5. Final Price:**  
+`₹2,000 + ₹360 = ₹2,360`
+
+**Final Price: ₹2,360**
+
+Usable: PENDING
+Failure: NONE
+
+======================================================================
+MODEL: nvidia/nemotron-3.5-lightning:free
+PROMPT: P5
+======================================================================
+
+Prompt:
+Write a Python function that takes a list of integers and returns the second-largest unique number. Handle the case where fewer than two unique numbers are provided.
+
+Latency:
+16.691 seconds
+
+Usage:
+Prompt tokens: 47
+Completion tokens: 1168
+Total tokens: 1215
+Cost: $0
+
+Response:
+Here's a clean, Pythonic solution:
+
+```python
+def second_largest_unique(numbers):
+    """
+    Return the second-largest unique integer from a list.
+    
+    If fewer than two unique numbers are provided, returns None.
+    """
+    unique_numbers = set(numbers)           # Remove duplicates
+    if len(unique_numbers) < 2:             # Handle edge case
+        return None
+    
+    # Sort descending and pick the second element
+    sorted_unique = sorted(unique_numbers, reverse=True)
+    return sorted_unique[1]
+
+
+# --- Quick demos ---
+print(second_largest_unique([3, 1, 4, 4, 2]))  # → 3
+print(second_largest_unique([5, 5, 5]))       # → None
+print(second_largest_unique([1, 2]))          # → 1
+print(second_largest_unique([]))               # → None
+```
+
+**How it works:**
+1. `set(numbers)` strips duplicates, leaving only unique values.
+2. If there are fewer than 2 unique values, we return `None` immediately (the function "handles" the case gracefully instead of crashing).
+3. Otherwise, we sort the unique values in descending order and return the element at index `1` (the second-largest).
+
+**Complexity:** O(n log n) time due to sorting, O(n) space for the set. For very large lists, a single-pass O(n) scan is possible, but this version prioritizes readability and correctness.
+
+Usable: PENDING
+Failure: NONE

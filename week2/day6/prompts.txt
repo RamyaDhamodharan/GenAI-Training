@@ -1,0 +1,5 @@
+P1|Explain what an API is to a beginner using one simple real-world example. Keep the answer under 150 words.
+P2|Extract the name, email, phone number, and issue from this text: Hi, I'm Arun. You can reach me at arun@example.com or +91 9876543210. My issue is that I cannot log in to my account.
+P3|Convert this information into JSON with the fields name, age, city, profession: Priya is 24 years old, lives in Chennai, and works as a software engineer.
+P4|A shop gives a 20% discount on a product priced at ₹2,500. After the discount, 18% GST is added. What is the final price? Show the calculation.
+P5|Write a Python function that takes a list of integers and returns the second-largest unique number. Handle the case where fewer than two unique numbers are provided.
