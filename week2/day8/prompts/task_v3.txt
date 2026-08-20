@@ -1,0 +1,7 @@
+Extract medications from the following note:
+
+{note}
+
+Return the result as a JSON array.
+
+Use only information provided in the note.

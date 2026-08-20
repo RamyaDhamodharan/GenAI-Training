@@ -1,0 +1,32 @@
+[
+    {
+        "note": "Patient takes Paracetamol 500 mg twice daily.",
+        "expected": [
+            {
+                "name": "Paracetamol",
+                "dose": "500 mg",
+                "frequency": "twice daily"
+            }
+        ]
+    },
+    {
+        "note": "Patient takes Aspirin daily.",
+        "expected": [
+            {
+                "name": "Aspirin",
+                "dose": null,
+                "frequency": "daily"
+            }
+        ]
+    },
+    {
+        "note": "Patient takes Ibuprofen 200 mg every 6 hours.",
+        "expected": [
+            {
+                "name": "Ibuprofen",
+                "dose": "200 mg",
+                "frequency": "every 6 hours"
+            }
+        ]
+    }
+]

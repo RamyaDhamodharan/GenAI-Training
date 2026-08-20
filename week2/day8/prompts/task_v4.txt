@@ -1,0 +1,11 @@
+Extract medications from the following note:
+
+{note}
+
+Return the result as a JSON array.
+
+Use only information provided in the note.
+
+Example:
+Note: Patient takes Aspirin 100 mg daily.
+Output: [{"name": "Aspirin", "dose": "100 mg", "frequency": "daily"}]
