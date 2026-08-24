@@ -15,7 +15,7 @@ headers = {
 note = "Patient takes Paracetamol 500 mg twice daily."
 
 prompt = Path(
-    "prompts/task_v1.txt"
+    "prompts/task_v5.txt"
 ).read_text(encoding="utf-8")
 
 prompt = prompt.replace("{note}", note)

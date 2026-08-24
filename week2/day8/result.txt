@@ -1,0 +1,40 @@
+(GenAI-Training) PS C:\Users\User\Desktop\GenAI-Training\week2\day8> python day8.py
+The medication extracted from the note is:
+
+- Paracetamol 500 mg, to be taken twice daily.
+(GenAI-Training) PS C:\Users\User\Desktop\GenAI-Training\week2\day8> python day8.py
+```json
+[
+    {
+        "medication": "Paracetamol",
+        "dosage": "500 mg",
+        "frequency": "twice daily"
+    }
+]
+```
+(GenAI-Training) PS C:\Users\User\Desktop\GenAI-Training\week2\day8> python day8.py
+```json
+[
+    {
+        "medication": "Paracetamol",
+        "dosage": "500 mg",
+        "frequency": "twice daily"
+    }
+]
+```
+(GenAI-Training) PS C:\Users\User\Desktop\GenAI-Training\week2\day8> python day8.py
+```json
+[{"name": "Paracetamol", "dose": "500 mg", "frequency": "twice daily"}]
+```
+(GenAI-Training) PS C:\Users\User\Desktop\GenAI-Training\week2\day8> python day8.py
+```json
+[
+    {
+        "medication": "Paracetamol",
+        "dose": "500 mg",
+        "frequency": "twice daily"
+    }
+]
+```
+
+
