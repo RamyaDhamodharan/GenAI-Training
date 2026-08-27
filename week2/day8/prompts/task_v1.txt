@@ -1,0 +1,3 @@
+Extract medications from the following note:
+
+{note}
