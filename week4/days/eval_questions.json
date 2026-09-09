@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "question": "How can patients request an appointment?",
+    "gold_text": "Patients can request an appointment through the clinic reception desk."
+  },
+  {
+    "id": 2,
+    "question": "Can patients request an appointment through the portal?",
+    "gold_text": "Patients may also request an appointment through the patient portal."
+  },
+  {
+    "id": 3,
+    "question": "What must each appointment be linked to?",
+    "gold_text": "Each appointment must be linked to one patient and one doctor."
+  },
+  {
+    "id": 4,
+    "question": "What should staff verify before confirming a booking?",
+    "gold_text": "Staff should verify the doctor's available consultation slot before confirming a booking."
+  },
+  {
+    "id": 5,
+    "question": "When should unwanted appointments be cancelled?",
+    "gold_text": "Patients should cancel unwanted appointments as early as possible."
+  },
+  {
+    "id": 6,
+    "question": "How early does the clinic recommend cancelling an appointment?",
+    "gold_text": "The clinic recommends cancelling at least 24 hours before the appointment."
+  },
+  {
+    "id": 7,
+    "question": "What does a missed appointment mean?",
+    "gold_text": "A missed appointment means the patient did not attend as expected."
+  },
+  {
+    "id": 8,
+    "question": "What should patients do if they cannot attend their appointment?",
+    "gold_text": "Patients who cannot attend should contact the clinic before the scheduled time."
+  },
+  {
+    "id": 9,
+    "question": "Can patients request a different appointment date?",
+    "gold_text": "Patients may request a different appointment date when available."
+  },
+  {
+    "id": 10,
+    "question": "What should staff verify before rescheduling?",
+    "gold_text": "Staff should verify the current appointment status before rescheduling."
+  },
+  {
+    "id": 11,
+    "question": "How should appointment status changes be handled?",
+    "gold_text": "Appointment status changes should be recorded consistently."
+  },
+  {
+    "id": 12,
+    "question": "Who should access confidential patient information?",
+    "gold_text": "Only authorized staff should access confidential patient information."
+  },
+  {
+    "id": 13,
+    "question": "What is required for protected clinic records?",
+    "gold_text": "Authentication is required for protected clinic records."
+  },
+  {
+    "id": 14,
+    "question": "How should patient records be handled?",
+    "gold_text": "Patient records should be handled according to clinic privacy procedures."
+  },
+  {
+    "id": 15,
+    "question": "What do doctor schedules contain?",
+    "gold_text": "Doctor schedules contain available consultation slots."
+  },
+  {
+    "id": 16,
+    "question": "Can a doctor have two confirmed appointments in the same slot?",
+    "gold_text": "A doctor should not have two confirmed appointments in the same slot."
+  },
+  {
+    "id": 17,
+    "question": "What can appointment search find by patient information?",
+    "gold_text": "Search can help staff find appointments by patient name."
+  },
+  {
+    "id": 18,
+    "question": "Can appointment search filter by doctor?",
+    "gold_text": "Search can also filter appointments by doctor."
+  },
+  {
+    "id": 19,
+    "question": "What should appointment changes include?",
+    "gold_text": "Changes should include the time of the update and the responsible staff member."
+  },
+  {
+    "id": 20,
+    "question": "What should staff communicate clearly to patients?",
+    "gold_text": "Staff should communicate cancellation and rescheduling procedures clearly."
+  }
+]

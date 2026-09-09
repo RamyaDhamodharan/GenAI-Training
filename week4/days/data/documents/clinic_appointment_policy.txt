@@ -1,0 +1,27 @@
+CLINIC APPOINTMENT POLICY
+
+1. Appointment Booking
+
+Patients can request an appointment through the clinic reception desk.
+Patients may also request an appointment through the patient portal.
+Each appointment must be linked to one patient and one doctor.
+Staff should verify the doctor's available consultation slot before confirming a booking.
+
+2. Cancellation Policy
+
+Patients should cancel unwanted appointments as early as possible.
+The clinic recommends cancelling at least 24 hours before the appointment.
+A missed appointment means the patient did not attend as expected.
+Patients who cannot attend should contact the clinic before the scheduled time.
+
+3. Rescheduling
+
+Patients may request a different appointment date when available.
+Staff should verify the current appointment status before rescheduling.
+Appointment status changes should be recorded consistently.
+
+4. Records and Privacy
+
+Only authorized staff should access confidential patient information.
+Authentication is required for protected clinic records.
+Patient records should be handled according to clinic privacy procedures.

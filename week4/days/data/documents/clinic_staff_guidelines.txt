@@ -1,0 +1,24 @@
+CLINIC STAFF GUIDELINES
+
+1. Doctor Schedules
+
+Doctor schedules contain available consultation slots.
+Staff must check schedule availability before confirming an appointment.
+A doctor should not have two confirmed appointments in the same slot.
+
+2. Appointment Search
+
+Search can help staff find appointments by patient name.
+Search can also filter appointments by doctor.
+The clinic may support department-based appointment search.
+
+3. Appointment Changes
+
+Staff should verify the current status before changing an appointment.
+The clinic may maintain an audit record for appointment changes.
+Changes should include the time of the update and the responsible staff member.
+
+4. Patient Communication
+
+Patients should receive clear information about appointment changes.
+Staff should communicate cancellation and rescheduling procedures clearly.

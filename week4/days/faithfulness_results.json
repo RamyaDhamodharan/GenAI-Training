@@ -1,0 +1,942 @@
+[
+  {
+    "id": 1,
+    "question": "How can patients request an appointment?",
+    "answer": "Patients can request an appointment through the clinic reception desk or through the patient portal.",
+    "retrieved_chunks": [
+      {
+        "id": 26,
+        "content": "1. Appointment Booking\nPatients can request an appointment through the clinic reception desk.\nPatients may also request an appointment through the patient portal.\nEach appointment must be linked to one patient and one doctor.\nStaff should verify the doctor's available consultation slot before confirming a booking.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "1. Appointment Booking",
+        "distance": 0.1934780363155567
+      },
+      {
+        "id": 49,
+        "content": "1. Doctor Schedules\nDoctor schedules contain available consultation slots.\nStaff must check schedule availability before confirming an appointment.\nA doctor should not have two confirmed appointments in the same slot.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "1. Doctor Schedules",
+        "distance": 0.36021717068944326
+      },
+      {
+        "id": 35,
+        "content": "2. Missed Appointments\nA missed appointment means the patient did not attend as expected.\nPatients should contact the clinic if they cannot attend their booking.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 1,
+        "section": "2. Missed Appointments",
+        "distance": 0.3623209163760046
+      },
+      {
+        "id": 40,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 2,
+        "section": "3. Rescheduling",
+        "distance": 0.3756462111683947
+      },
+      {
+        "id": 52,
+        "content": "4. Patient Communication\nPatients should receive clear information about appointment changes.\nStaff should communicate cancellation and rescheduling procedures clearly.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "4. Patient Communication",
+        "distance": 0.38776151014795734
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Can patients request an appointment through the portal?",
+    "answer": "Yes, patients can request an appointment through the patient portal.",
+    "retrieved_chunks": [
+      {
+        "id": 26,
+        "content": "1. Appointment Booking\nPatients can request an appointment through the clinic reception desk.\nPatients may also request an appointment through the patient portal.\nEach appointment must be linked to one patient and one doctor.\nStaff should verify the doctor's available consultation slot before confirming a booking.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "1. Appointment Booking",
+        "distance": 0.22783195972442627
+      },
+      {
+        "id": 35,
+        "content": "2. Missed Appointments\nA missed appointment means the patient did not attend as expected.\nPatients should contact the clinic if they cannot attend their booking.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 1,
+        "section": "2. Missed Appointments",
+        "distance": 0.41447893294817506
+      },
+      {
+        "id": 49,
+        "content": "1. Doctor Schedules\nDoctor schedules contain available consultation slots.\nStaff must check schedule availability before confirming an appointment.\nA doctor should not have two confirmed appointments in the same slot.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "1. Doctor Schedules",
+        "distance": 0.4299451452526354
+      },
+      {
+        "id": 40,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 2,
+        "section": "3. Rescheduling",
+        "distance": 0.4381779432296753
+      },
+      {
+        "id": 52,
+        "content": "4. Patient Communication\nPatients should receive clear information about appointment changes.\nStaff should communicate cancellation and rescheduling procedures clearly.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "4. Patient Communication",
+        "distance": 0.448638916015625
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What must each appointment be linked to?",
+    "answer": "Each appointment must be linked to one patient and one doctor.",
+    "retrieved_chunks": [
+      {
+        "id": 26,
+        "content": "1. Appointment Booking\nPatients can request an appointment through the clinic reception desk.\nPatients may also request an appointment through the patient portal.\nEach appointment must be linked to one patient and one doctor.\nStaff should verify the doctor's available consultation slot before confirming a booking.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "1. Appointment Booking",
+        "distance": 0.34406087827863896
+      },
+      {
+        "id": 49,
+        "content": "1. Doctor Schedules\nDoctor schedules contain available consultation slots.\nStaff must check schedule availability before confirming an appointment.\nA doctor should not have two confirmed appointments in the same slot.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "1. Doctor Schedules",
+        "distance": 0.37821688120910635
+      },
+      {
+        "id": 51,
+        "content": "3. Appointment Changes\nStaff should verify the current status before changing an appointment.\nThe clinic may maintain an audit record for appointment changes.\nChanges should include the time of the update and the responsible staff member.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "3. Appointment Changes",
+        "distance": 0.39620856631423707
+      },
+      {
+        "id": 52,
+        "content": "4. Patient Communication\nPatients should receive clear information about appointment changes.\nStaff should communicate cancellation and rescheduling procedures clearly.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "4. Patient Communication",
+        "distance": 0.433924240884907
+      },
+      {
+        "id": 28,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.\nAppointment status changes should be recorded consistently.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "3. Rescheduling",
+        "distance": 0.46524076060178143
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "What should staff verify before confirming a booking?",
+    "answer": "Staff should verify the doctor's available consultation slot before confirming a booking.",
+    "retrieved_chunks": [
+      {
+        "id": 51,
+        "content": "3. Appointment Changes\nStaff should verify the current status before changing an appointment.\nThe clinic may maintain an audit record for appointment changes.\nChanges should include the time of the update and the responsible staff member.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "3. Appointment Changes",
+        "distance": 0.5001676678657532
+      },
+      {
+        "id": 28,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.\nAppointment status changes should be recorded consistently.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "3. Rescheduling",
+        "distance": 0.5532218515872955
+      },
+      {
+        "id": 52,
+        "content": "4. Patient Communication\nPatients should receive clear information about appointment changes.\nStaff should communicate cancellation and rescheduling procedures clearly.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "4. Patient Communication",
+        "distance": 0.5717584490776062
+      },
+      {
+        "id": 26,
+        "content": "1. Appointment Booking\nPatients can request an appointment through the clinic reception desk.\nPatients may also request an appointment through the patient portal.\nEach appointment must be linked to one patient and one doctor.\nStaff should verify the doctor's available consultation slot before confirming a booking.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "1. Appointment Booking",
+        "distance": 0.5794715881347656
+      },
+      {
+        "id": 40,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 2,
+        "section": "3. Rescheduling",
+        "distance": 0.5882400274276733
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "When should unwanted appointments be cancelled?",
+    "answer": "Unwanted appointments should be cancelled as early as possible, with the clinic recommending cancelling at least 24 hours before the appointment.",
+    "retrieved_chunks": [
+      {
+        "id": 27,
+        "content": "2. Cancellation Policy\nPatients should cancel unwanted appointments as early as possible.\nThe clinic recommends cancelling at least 24 hours before the appointment.\nA missed appointment means the patient did not attend as expected.\nPatients who cannot attend should contact the clinic before the scheduled time.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "2. Cancellation Policy",
+        "distance": 0.22972088125832768
+      },
+      {
+        "id": 34,
+        "content": "1. Appointment Cancellation\nPatients should cancel unwanted appointments as early as possible.\nThe clinic recommends cancelling at least 24 hours before the appointment.\nPatients who cannot attend should contact the clinic before the scheduled time.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 1,
+        "section": "1. Appointment Cancellation",
+        "distance": 0.2390504848674081
+      },
+      {
+        "id": 35,
+        "content": "2. Missed Appointments\nA missed appointment means the patient did not attend as expected.\nPatients should contact the clinic if they cannot attend their booking.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 1,
+        "section": "2. Missed Appointments",
+        "distance": 0.4392190146678957
+      },
+      {
+        "id": 49,
+        "content": "1. Doctor Schedules\nDoctor schedules contain available consultation slots.\nStaff must check schedule availability before confirming an appointment.\nA doctor should not have two confirmed appointments in the same slot.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "1. Doctor Schedules",
+        "distance": 0.4792983687133062
+      },
+      {
+        "id": 52,
+        "content": "4. Patient Communication\nPatients should receive clear information about appointment changes.\nStaff should communicate cancellation and rescheduling procedures clearly.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "4. Patient Communication",
+        "distance": 0.48264871485974514
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "How early does the clinic recommend cancelling an appointment?",
+    "answer": "The clinic recommends cancelling an appointment at least 24 hours before the appointment.",
+    "retrieved_chunks": [
+      {
+        "id": 27,
+        "content": "2. Cancellation Policy\nPatients should cancel unwanted appointments as early as possible.\nThe clinic recommends cancelling at least 24 hours before the appointment.\nA missed appointment means the patient did not attend as expected.\nPatients who cannot attend should contact the clinic before the scheduled time.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "2. Cancellation Policy",
+        "distance": 0.13672978500901223
+      },
+      {
+        "id": 34,
+        "content": "1. Appointment Cancellation\nPatients should cancel unwanted appointments as early as possible.\nThe clinic recommends cancelling at least 24 hours before the appointment.\nPatients who cannot attend should contact the clinic before the scheduled time.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 1,
+        "section": "1. Appointment Cancellation",
+        "distance": 0.14100110530853271
+      },
+      {
+        "id": 35,
+        "content": "2. Missed Appointments\nA missed appointment means the patient did not attend as expected.\nPatients should contact the clinic if they cannot attend their booking.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 1,
+        "section": "2. Missed Appointments",
+        "distance": 0.4192759144737761
+      },
+      {
+        "id": 40,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 2,
+        "section": "3. Rescheduling",
+        "distance": 0.431621789932251
+      },
+      {
+        "id": 49,
+        "content": "1. Doctor Schedules\nDoctor schedules contain available consultation slots.\nStaff must check schedule availability before confirming an appointment.\nA doctor should not have two confirmed appointments in the same slot.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "1. Doctor Schedules",
+        "distance": 0.4504061072822736
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "What does a missed appointment mean?",
+    "answer": "A missed appointment means the patient did not attend as expected.",
+    "retrieved_chunks": [
+      {
+        "id": 35,
+        "content": "2. Missed Appointments\nA missed appointment means the patient did not attend as expected.\nPatients should contact the clinic if they cannot attend their booking.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 1,
+        "section": "2. Missed Appointments",
+        "distance": 0.18335263828321324
+      },
+      {
+        "id": 49,
+        "content": "1. Doctor Schedules\nDoctor schedules contain available consultation slots.\nStaff must check schedule availability before confirming an appointment.\nA doctor should not have two confirmed appointments in the same slot.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "1. Doctor Schedules",
+        "distance": 0.49180623937807955
+      },
+      {
+        "id": 40,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 2,
+        "section": "3. Rescheduling",
+        "distance": 0.512587308883667
+      },
+      {
+        "id": 27,
+        "content": "2. Cancellation Policy\nPatients should cancel unwanted appointments as early as possible.\nThe clinic recommends cancelling at least 24 hours before the appointment.\nA missed appointment means the patient did not attend as expected.\nPatients who cannot attend should contact the clinic before the scheduled time.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "2. Cancellation Policy",
+        "distance": 0.5324375946782578
+      },
+      {
+        "id": 26,
+        "content": "1. Appointment Booking\nPatients can request an appointment through the clinic reception desk.\nPatients may also request an appointment through the patient portal.\nEach appointment must be linked to one patient and one doctor.\nStaff should verify the doctor's available consultation slot before confirming a booking.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "1. Appointment Booking",
+        "distance": 0.5358906388282776
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "What should patients do if they cannot attend their appointment?",
+    "answer": "If patients cannot attend their appointment, they should contact the clinic before the scheduled time and cancel the appointment as early as possible. The clinic recommends cancelling at least 24 hours before the appointment.",
+    "retrieved_chunks": [
+      {
+        "id": 35,
+        "content": "2. Missed Appointments\nA missed appointment means the patient did not attend as expected.\nPatients should contact the clinic if they cannot attend their booking.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 1,
+        "section": "2. Missed Appointments",
+        "distance": 0.26817270896760115
+      },
+      {
+        "id": 27,
+        "content": "2. Cancellation Policy\nPatients should cancel unwanted appointments as early as possible.\nThe clinic recommends cancelling at least 24 hours before the appointment.\nA missed appointment means the patient did not attend as expected.\nPatients who cannot attend should contact the clinic before the scheduled time.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "2. Cancellation Policy",
+        "distance": 0.40683257579803045
+      },
+      {
+        "id": 52,
+        "content": "4. Patient Communication\nPatients should receive clear information about appointment changes.\nStaff should communicate cancellation and rescheduling procedures clearly.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "4. Patient Communication",
+        "distance": 0.42209163772513536
+      },
+      {
+        "id": 26,
+        "content": "1. Appointment Booking\nPatients can request an appointment through the clinic reception desk.\nPatients may also request an appointment through the patient portal.\nEach appointment must be linked to one patient and one doctor.\nStaff should verify the doctor's available consultation slot before confirming a booking.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "1. Appointment Booking",
+        "distance": 0.42701307374160935
+      },
+      {
+        "id": 34,
+        "content": "1. Appointment Cancellation\nPatients should cancel unwanted appointments as early as possible.\nThe clinic recommends cancelling at least 24 hours before the appointment.\nPatients who cannot attend should contact the clinic before the scheduled time.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 1,
+        "section": "1. Appointment Cancellation",
+        "distance": 0.4370907880609748
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Can patients request a different appointment date?",
+    "answer": "Yes, patients may request a different appointment date when available.",
+    "retrieved_chunks": [
+      {
+        "id": 40,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 2,
+        "section": "3. Rescheduling",
+        "distance": 0.19656667750278412
+      },
+      {
+        "id": 28,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.\nAppointment status changes should be recorded consistently.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "3. Rescheduling",
+        "distance": 0.23448726719769086
+      },
+      {
+        "id": 49,
+        "content": "1. Doctor Schedules\nDoctor schedules contain available consultation slots.\nStaff must check schedule availability before confirming an appointment.\nA doctor should not have two confirmed appointments in the same slot.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "1. Doctor Schedules",
+        "distance": 0.30785394170511693
+      },
+      {
+        "id": 51,
+        "content": "3. Appointment Changes\nStaff should verify the current status before changing an appointment.\nThe clinic may maintain an audit record for appointment changes.\nChanges should include the time of the update and the responsible staff member.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "3. Appointment Changes",
+        "distance": 0.3478589239288613
+      },
+      {
+        "id": 26,
+        "content": "1. Appointment Booking\nPatients can request an appointment through the clinic reception desk.\nPatients may also request an appointment through the patient portal.\nEach appointment must be linked to one patient and one doctor.\nStaff should verify the doctor's available consultation slot before confirming a booking.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "1. Appointment Booking",
+        "distance": 0.3753948956257185
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "What should staff verify before rescheduling?",
+    "answer": "Staff should verify the current appointment status before rescheduling.",
+    "retrieved_chunks": [
+      {
+        "id": 28,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.\nAppointment status changes should be recorded consistently.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "3. Rescheduling",
+        "distance": 0.3412461280822754
+      },
+      {
+        "id": 40,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 2,
+        "section": "3. Rescheduling",
+        "distance": 0.3479738235473633
+      },
+      {
+        "id": 51,
+        "content": "3. Appointment Changes\nStaff should verify the current status before changing an appointment.\nThe clinic may maintain an audit record for appointment changes.\nChanges should include the time of the update and the responsible staff member.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "3. Appointment Changes",
+        "distance": 0.44079017639160156
+      },
+      {
+        "id": 52,
+        "content": "4. Patient Communication\nPatients should receive clear information about appointment changes.\nStaff should communicate cancellation and rescheduling procedures clearly.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "4. Patient Communication",
+        "distance": 0.4682711362838745
+      },
+      {
+        "id": 49,
+        "content": "1. Doctor Schedules\nDoctor schedules contain available consultation slots.\nStaff must check schedule availability before confirming an appointment.\nA doctor should not have two confirmed appointments in the same slot.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "1. Doctor Schedules",
+        "distance": 0.547298011344789
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "How should appointment status changes be handled?",
+    "answer": "Appointment status changes should be handled by first verifying the current appointment status before making any changes. All changes should be recorded consistently, including the time of the update and the responsible staff member. Additionally, the clinic may maintain an audit record for appointment changes to ensure proper tracking.",
+    "retrieved_chunks": [
+      {
+        "id": 51,
+        "content": "3. Appointment Changes\nStaff should verify the current status before changing an appointment.\nThe clinic may maintain an audit record for appointment changes.\nChanges should include the time of the update and the responsible staff member.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "3. Appointment Changes",
+        "distance": 0.24299240112304688
+      },
+      {
+        "id": 28,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.\nAppointment status changes should be recorded consistently.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "3. Rescheduling",
+        "distance": 0.3082202672958374
+      },
+      {
+        "id": 40,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 2,
+        "section": "3. Rescheduling",
+        "distance": 0.36751461029052734
+      },
+      {
+        "id": 52,
+        "content": "4. Patient Communication\nPatients should receive clear information about appointment changes.\nStaff should communicate cancellation and rescheduling procedures clearly.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "4. Patient Communication",
+        "distance": 0.388518750667572
+      },
+      {
+        "id": 35,
+        "content": "2. Missed Appointments\nA missed appointment means the patient did not attend as expected.\nPatients should contact the clinic if they cannot attend their booking.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 1,
+        "section": "2. Missed Appointments",
+        "distance": 0.5076753790572051
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "Who should access confidential patient information?",
+    "answer": "Only authorized staff should access confidential patient information.",
+    "retrieved_chunks": [
+      {
+        "id": 41,
+        "content": "4. Privacy\nOnly authorized staff should access confidential patient information.\nAuthentication is required for protected clinic records.\nPatient records should be handled according to clinic privacy procedures.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 2,
+        "section": "4. Privacy",
+        "distance": 0.23609888553619385
+      },
+      {
+        "id": 29,
+        "content": "4. Records and Privacy\nOnly authorized staff should access confidential patient information.\nAuthentication is required for protected clinic records.\nPatient records should be handled according to clinic privacy procedures.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "4. Records and Privacy",
+        "distance": 0.2375243902206421
+      },
+      {
+        "id": 52,
+        "content": "4. Patient Communication\nPatients should receive clear information about appointment changes.\nStaff should communicate cancellation and rescheduling procedures clearly.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "4. Patient Communication",
+        "distance": 0.5103126764297485
+      },
+      {
+        "id": 26,
+        "content": "1. Appointment Booking\nPatients can request an appointment through the clinic reception desk.\nPatients may also request an appointment through the patient portal.\nEach appointment must be linked to one patient and one doctor.\nStaff should verify the doctor's available consultation slot before confirming a booking.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "1. Appointment Booking",
+        "distance": 0.5867102146148682
+      },
+      {
+        "id": 51,
+        "content": "3. Appointment Changes\nStaff should verify the current status before changing an appointment.\nThe clinic may maintain an audit record for appointment changes.\nChanges should include the time of the update and the responsible staff member.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "3. Appointment Changes",
+        "distance": 0.5888552963733673
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "What is required for protected clinic records?",
+    "answer": "Authentication is required for protected clinic records.",
+    "retrieved_chunks": [
+      {
+        "id": 29,
+        "content": "4. Records and Privacy\nOnly authorized staff should access confidential patient information.\nAuthentication is required for protected clinic records.\nPatient records should be handled according to clinic privacy procedures.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "4. Records and Privacy",
+        "distance": 0.23558656957229418
+      },
+      {
+        "id": 41,
+        "content": "4. Privacy\nOnly authorized staff should access confidential patient information.\nAuthentication is required for protected clinic records.\nPatient records should be handled according to clinic privacy procedures.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 2,
+        "section": "4. Privacy",
+        "distance": 0.2707498508244829
+      },
+      {
+        "id": 51,
+        "content": "3. Appointment Changes\nStaff should verify the current status before changing an appointment.\nThe clinic may maintain an audit record for appointment changes.\nChanges should include the time of the update and the responsible staff member.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "3. Appointment Changes",
+        "distance": 0.5737031356273206
+      },
+      {
+        "id": 26,
+        "content": "1. Appointment Booking\nPatients can request an appointment through the clinic reception desk.\nPatients may also request an appointment through the patient portal.\nEach appointment must be linked to one patient and one doctor.\nStaff should verify the doctor's available consultation slot before confirming a booking.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "1. Appointment Booking",
+        "distance": 0.648346355656006
+      },
+      {
+        "id": 35,
+        "content": "2. Missed Appointments\nA missed appointment means the patient did not attend as expected.\nPatients should contact the clinic if they cannot attend their booking.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 1,
+        "section": "2. Missed Appointments",
+        "distance": 0.693434662409465
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "question": "How should patient records be handled?",
+    "answer": "Patient records should be handled according to clinic privacy procedures, ensuring that only authorized staff access confidential patient information and that authentication is required for protected clinic records.",
+    "retrieved_chunks": [
+      {
+        "id": 29,
+        "content": "4. Records and Privacy\nOnly authorized staff should access confidential patient information.\nAuthentication is required for protected clinic records.\nPatient records should be handled according to clinic privacy procedures.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "4. Records and Privacy",
+        "distance": 0.3829106092453003
+      },
+      {
+        "id": 41,
+        "content": "4. Privacy\nOnly authorized staff should access confidential patient information.\nAuthentication is required for protected clinic records.\nPatient records should be handled according to clinic privacy procedures.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 2,
+        "section": "4. Privacy",
+        "distance": 0.4397158622741699
+      },
+      {
+        "id": 52,
+        "content": "4. Patient Communication\nPatients should receive clear information about appointment changes.\nStaff should communicate cancellation and rescheduling procedures clearly.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "4. Patient Communication",
+        "distance": 0.4513469338417053
+      },
+      {
+        "id": 51,
+        "content": "3. Appointment Changes\nStaff should verify the current status before changing an appointment.\nThe clinic may maintain an audit record for appointment changes.\nChanges should include the time of the update and the responsible staff member.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "3. Appointment Changes",
+        "distance": 0.5055618584156036
+      },
+      {
+        "id": 26,
+        "content": "1. Appointment Booking\nPatients can request an appointment through the clinic reception desk.\nPatients may also request an appointment through the patient portal.\nEach appointment must be linked to one patient and one doctor.\nStaff should verify the doctor's available consultation slot before confirming a booking.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "1. Appointment Booking",
+        "distance": 0.5441471934318542
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "What do doctor schedules contain?",
+    "answer": "Doctor schedules contain available consultation slots.",
+    "retrieved_chunks": [
+      {
+        "id": 49,
+        "content": "1. Doctor Schedules\nDoctor schedules contain available consultation slots.\nStaff must check schedule availability before confirming an appointment.\nA doctor should not have two confirmed appointments in the same slot.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "1. Doctor Schedules",
+        "distance": 0.28693100369799096
+      },
+      {
+        "id": 52,
+        "content": "4. Patient Communication\nPatients should receive clear information about appointment changes.\nStaff should communicate cancellation and rescheduling procedures clearly.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "4. Patient Communication",
+        "distance": 0.4975740016952743
+      },
+      {
+        "id": 26,
+        "content": "1. Appointment Booking\nPatients can request an appointment through the clinic reception desk.\nPatients may also request an appointment through the patient portal.\nEach appointment must be linked to one patient and one doctor.\nStaff should verify the doctor's available consultation slot before confirming a booking.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "1. Appointment Booking",
+        "distance": 0.5295000058710564
+      },
+      {
+        "id": 28,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.\nAppointment status changes should be recorded consistently.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "3. Rescheduling",
+        "distance": 0.5311638098261462
+      },
+      {
+        "id": 40,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 2,
+        "section": "3. Rescheduling",
+        "distance": 0.5339560786511843
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "question": "Can a doctor have two confirmed appointments in the same slot?",
+    "answer": "A doctor should not have two confirmed appointments in the same slot.",
+    "retrieved_chunks": [
+      {
+        "id": 49,
+        "content": "1. Doctor Schedules\nDoctor schedules contain available consultation slots.\nStaff must check schedule availability before confirming an appointment.\nA doctor should not have two confirmed appointments in the same slot.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "1. Doctor Schedules",
+        "distance": 0.19992015362737736
+      },
+      {
+        "id": 26,
+        "content": "1. Appointment Booking\nPatients can request an appointment through the clinic reception desk.\nPatients may also request an appointment through the patient portal.\nEach appointment must be linked to one patient and one doctor.\nStaff should verify the doctor's available consultation slot before confirming a booking.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "1. Appointment Booking",
+        "distance": 0.3911773329271465
+      },
+      {
+        "id": 40,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 2,
+        "section": "3. Rescheduling",
+        "distance": 0.39563051488217515
+      },
+      {
+        "id": 28,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.\nAppointment status changes should be recorded consistently.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "3. Rescheduling",
+        "distance": 0.4216806041192638
+      },
+      {
+        "id": 51,
+        "content": "3. Appointment Changes\nStaff should verify the current status before changing an appointment.\nThe clinic may maintain an audit record for appointment changes.\nChanges should include the time of the update and the responsible staff member.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "3. Appointment Changes",
+        "distance": 0.48849871823199187
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "question": "What can appointment search find by patient information?",
+    "answer": "Appointment search can find appointments by patient name.",
+    "retrieved_chunks": [
+      {
+        "id": 50,
+        "content": "2. Appointment Search\nSearch can help staff find appointments by patient name.\nSearch can also filter appointments by doctor.\nThe clinic may support department-based appointment search.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "2. Appointment Search",
+        "distance": 0.25030121953192974
+      },
+      {
+        "id": 26,
+        "content": "1. Appointment Booking\nPatients can request an appointment through the clinic reception desk.\nPatients may also request an appointment through the patient portal.\nEach appointment must be linked to one patient and one doctor.\nStaff should verify the doctor's available consultation slot before confirming a booking.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "1. Appointment Booking",
+        "distance": 0.3636646081109225
+      },
+      {
+        "id": 49,
+        "content": "1. Doctor Schedules\nDoctor schedules contain available consultation slots.\nStaff must check schedule availability before confirming an appointment.\nA doctor should not have two confirmed appointments in the same slot.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "1. Doctor Schedules",
+        "distance": 0.48133327122529324
+      },
+      {
+        "id": 52,
+        "content": "4. Patient Communication\nPatients should receive clear information about appointment changes.\nStaff should communicate cancellation and rescheduling procedures clearly.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "4. Patient Communication",
+        "distance": 0.4859529580459878
+      },
+      {
+        "id": 51,
+        "content": "3. Appointment Changes\nStaff should verify the current status before changing an appointment.\nThe clinic may maintain an audit record for appointment changes.\nChanges should include the time of the update and the responsible staff member.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "3. Appointment Changes",
+        "distance": 0.49985991417944153
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "question": "Can appointment search filter by doctor?",
+    "answer": "Yes, appointment search can filter appointments by doctor.",
+    "retrieved_chunks": [
+      {
+        "id": 50,
+        "content": "2. Appointment Search\nSearch can help staff find appointments by patient name.\nSearch can also filter appointments by doctor.\nThe clinic may support department-based appointment search.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "2. Appointment Search",
+        "distance": 0.2865712642669678
+      },
+      {
+        "id": 49,
+        "content": "1. Doctor Schedules\nDoctor schedules contain available consultation slots.\nStaff must check schedule availability before confirming an appointment.\nA doctor should not have two confirmed appointments in the same slot.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "1. Doctor Schedules",
+        "distance": 0.486509413331185
+      },
+      {
+        "id": 26,
+        "content": "1. Appointment Booking\nPatients can request an appointment through the clinic reception desk.\nPatients may also request an appointment through the patient portal.\nEach appointment must be linked to one patient and one doctor.\nStaff should verify the doctor's available consultation slot before confirming a booking.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "1. Appointment Booking",
+        "distance": 0.4866601228713989
+      },
+      {
+        "id": 51,
+        "content": "3. Appointment Changes\nStaff should verify the current status before changing an appointment.\nThe clinic may maintain an audit record for appointment changes.\nChanges should include the time of the update and the responsible staff member.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "3. Appointment Changes",
+        "distance": 0.5859836339950562
+      },
+      {
+        "id": 40,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 2,
+        "section": "3. Rescheduling",
+        "distance": 0.5941690802574158
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "question": "What should appointment changes include?",
+    "answer": "Appointment changes should include the time of the update and the responsible staff member.",
+    "retrieved_chunks": [
+      {
+        "id": 51,
+        "content": "3. Appointment Changes\nStaff should verify the current status before changing an appointment.\nThe clinic may maintain an audit record for appointment changes.\nChanges should include the time of the update and the responsible staff member.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "3. Appointment Changes",
+        "distance": 0.23106633239589003
+      },
+      {
+        "id": 28,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.\nAppointment status changes should be recorded consistently.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "3. Rescheduling",
+        "distance": 0.3490879327602415
+      },
+      {
+        "id": 52,
+        "content": "4. Patient Communication\nPatients should receive clear information about appointment changes.\nStaff should communicate cancellation and rescheduling procedures clearly.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "4. Patient Communication",
+        "distance": 0.38267580374027355
+      },
+      {
+        "id": 40,
+        "content": "3. Rescheduling\nPatients may request a different appointment date when available.\nStaff should verify the current appointment status before rescheduling.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 2,
+        "section": "3. Rescheduling",
+        "distance": 0.3919468288453313
+      },
+      {
+        "id": 49,
+        "content": "1. Doctor Schedules\nDoctor schedules contain available consultation slots.\nStaff must check schedule availability before confirming an appointment.\nA doctor should not have two confirmed appointments in the same slot.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "1. Doctor Schedules",
+        "distance": 0.45294607246564955
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "question": "What should staff communicate clearly to patients?",
+    "answer": "Staff should communicate cancellation and rescheduling procedures clearly to patients.",
+    "retrieved_chunks": [
+      {
+        "id": 52,
+        "content": "4. Patient Communication\nPatients should receive clear information about appointment changes.\nStaff should communicate cancellation and rescheduling procedures clearly.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "4. Patient Communication",
+        "distance": 0.2902147423964996
+      },
+      {
+        "id": 26,
+        "content": "1. Appointment Booking\nPatients can request an appointment through the clinic reception desk.\nPatients may also request an appointment through the patient portal.\nEach appointment must be linked to one patient and one doctor.\nStaff should verify the doctor's available consultation slot before confirming a booking.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "1. Appointment Booking",
+        "distance": 0.5412881325139809
+      },
+      {
+        "id": 41,
+        "content": "4. Privacy\nOnly authorized staff should access confidential patient information.\nAuthentication is required for protected clinic records.\nPatient records should be handled according to clinic privacy procedures.",
+        "source": "clinic_patient_handbook_scanned.pdf",
+        "page": 2,
+        "section": "4. Privacy",
+        "distance": 0.5514252720564248
+      },
+      {
+        "id": 29,
+        "content": "4. Records and Privacy\nOnly authorized staff should access confidential patient information.\nAuthentication is required for protected clinic records.\nPatient records should be handled according to clinic privacy procedures.",
+        "source": "clinic_appointment_policy.txt",
+        "page": null,
+        "section": "4. Records and Privacy",
+        "distance": 0.5613324271044191
+      },
+      {
+        "id": 51,
+        "content": "3. Appointment Changes\nStaff should verify the current status before changing an appointment.\nThe clinic may maintain an audit record for appointment changes.\nChanges should include the time of the update and the responsible staff member.",
+        "source": "clinic_staff_guidelines.txt",
+        "page": null,
+        "section": "3. Appointment Changes",
+        "distance": 0.5903966021064966
+      }
+    ]
+  }
+]

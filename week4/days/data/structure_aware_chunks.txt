@@ -1,0 +1,118 @@
+--- CHUNK 1 ---
+Source: clinic_appointment_policy.txt
+Section: 1. Appointment Booking
+Chunk index: 0
+
+1. Appointment Booking
+Patients can request an appointment through the clinic reception desk.
+Patients may also request an appointment through the patient portal.
+Each appointment must be linked to one patient and one doctor.
+Staff should verify the doctor's available consultation slot before confirming a booking.
+
+--- CHUNK 2 ---
+Source: clinic_appointment_policy.txt
+Section: 2. Cancellation Policy
+Chunk index: 1
+
+2. Cancellation Policy
+Patients should cancel unwanted appointments as early as possible.
+The clinic recommends cancelling at least 24 hours before the appointment.
+A missed appointment means the patient did not attend as expected.
+Patients who cannot attend should contact the clinic before the scheduled time.
+
+--- CHUNK 3 ---
+Source: clinic_appointment_policy.txt
+Section: 3. Rescheduling
+Chunk index: 2
+
+3. Rescheduling
+Patients may request a different appointment date when available.
+Staff should verify the current appointment status before rescheduling.
+Appointment status changes should be recorded consistently.
+
+--- CHUNK 4 ---
+Source: clinic_appointment_policy.txt
+Section: 4. Records and Privacy
+Chunk index: 3
+
+4. Records and Privacy
+Only authorized staff should access confidential patient information.
+Authentication is required for protected clinic records.
+Patient records should be handled according to clinic privacy procedures.
+
+--- CHUNK 5 ---
+Source: clinic_patient_handbook_scanned.pdf
+Section: 1. Appointment Cancellation
+Chunk index: 0
+
+1. Appointment Cancellation
+Patients should cancel unwanted appointments as early as possible.
+The clinic recommends cancelling at least 24 hours before the appointment.
+Patients who cannot attend should contact the clinic before the scheduled time.
+
+--- CHUNK 6 ---
+Source: clinic_patient_handbook_scanned.pdf
+Section: 2. Missed Appointments
+Chunk index: 1
+
+2. Missed Appointments
+A missed appointment means the patient did not attend as expected.
+Patients should contact the clinic if they cannot attend their booking.
+
+--- CHUNK 7 ---
+Source: clinic_patient_handbook_scanned.pdf
+Section: 3. Rescheduling
+Chunk index: 2
+
+3. Rescheduling
+Patients may request a different appointment date when available.
+Staff should verify the current appointment status before rescheduling.
+
+--- CHUNK 8 ---
+Source: clinic_patient_handbook_scanned.pdf
+Section: 4. Privacy
+Chunk index: 3
+
+4. Privacy
+Only authorized staff should access confidential patient information.
+Authentication is required for protected clinic records.
+Patient records should be handled according to clinic privacy procedures.
+
+--- CHUNK 9 ---
+Source: clinic_staff_guidelines.txt
+Section: 1. Doctor Schedules
+Chunk index: 0
+
+1. Doctor Schedules
+Doctor schedules contain available consultation slots.
+Staff must check schedule availability before confirming an appointment.
+A doctor should not have two confirmed appointments in the same slot.
+
+--- CHUNK 10 ---
+Source: clinic_staff_guidelines.txt
+Section: 2. Appointment Search
+Chunk index: 1
+
+2. Appointment Search
+Search can help staff find appointments by patient name.
+Search can also filter appointments by doctor.
+The clinic may support department-based appointment search.
+
+--- CHUNK 11 ---
+Source: clinic_staff_guidelines.txt
+Section: 3. Appointment Changes
+Chunk index: 2
+
+3. Appointment Changes
+Staff should verify the current status before changing an appointment.
+The clinic may maintain an audit record for appointment changes.
+Changes should include the time of the update and the responsible staff member.
+
+--- CHUNK 12 ---
+Source: clinic_staff_guidelines.txt
+Section: 4. Patient Communication
+Chunk index: 3
+
+4. Patient Communication
+Patients should receive clear information about appointment changes.
+Staff should communicate cancellation and rescheduling procedures clearly.
