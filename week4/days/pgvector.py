@@ -18,3 +18,5 @@ print(cur.fetchall())
 
 cur.close()
 conn.close()
+
+# to check whether the extension is installed, run the following command in psql:
